@@ -40,7 +40,7 @@ public class FrmInsumos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Mantenimiento de Insumos");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Rollos", " ", " " }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Rollos", "Directos", "Indirectos", " " }));
 
         jLabel1.setText("MANTENIMIENTO DE INSUMOS");
 
