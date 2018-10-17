@@ -7,7 +7,7 @@ package VIEW;
 
 /**
  *
- * @author Administrador
+ * @author Administrador JOSE ANTONIO HUILLCA PAUCAR
  */
 public class FrmMantenimientoCliente extends javax.swing.JFrame {
 
