@@ -108,9 +108,9 @@ public class GuiaEntrada extends javax.swing.JFrame {
         jTextField6.setText(" ");
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, 490, 30));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("GUIA DE ENTRADA");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
