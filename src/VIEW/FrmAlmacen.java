@@ -7,7 +7,7 @@ package VIEW;
 
 /**
  *
- * @author Administrador
+ * @author GABRIELA Y GERALDINE
  */
 public class FrmAlmacen extends javax.swing.JFrame {
 
