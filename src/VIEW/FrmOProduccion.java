@@ -5,22 +5,29 @@
  */
 package VIEW;
 
+import java.time.Instant;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 /**
  *
  * @author Administrador
  */
-public class FrmOProduccion extends javax.swing.JFrame {
+public class FrmOProduccion extends javax.swing.JFrame implements Runnable{
 
-    static FrmOProduccion getFrmPedido() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    String hora, minutos, segundos, ampm;
+    Calendar calendario;
+    Thread h1;
     /**
      * Creates new form FrmFacturacion
      */
     public FrmOProduccion() {
         initComponents();
         setLocationRelativeTo(null);
+        jLabel8.setText(Date.from(Instant.now()).toString());
+        h1 = new Thread(this);
+        h1.start();
     }
 
     /**
@@ -71,8 +78,8 @@ public class FrmOProduccion extends javax.swing.JFrame {
         setTitle("Orden de Producción");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Orden de Producción Nro.");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, -1, -1));
+        jLabel1.setText("Orden de Producción Nro:");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, -1, -1));
 
         jTextField1.setText("OP0001");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -80,10 +87,10 @@ public class FrmOProduccion extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, 106, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 140, -1));
 
         jLabel3.setText("Nombre del Cliente:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, 110, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 110, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -102,19 +109,19 @@ public class FrmOProduccion extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 640, 150));
 
         jLabel5.setText("Fecha:");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 20, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 50, -1, -1));
 
         jLabel6.setText("Hora:");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 50, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 80, -1, -1));
 
         jLabel8.setText("jLabel8");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 50, -1, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 80, -1, -1));
 
         jButton1.setText("Adicionar");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 270, 80, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 280, 80, -1));
 
         jButton2.setText("Editar");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 310, 80, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 320, 80, -1));
 
         jLabel9.setText("TOTAL DE CANTIDADES: ");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 410, -1, -1));
@@ -160,39 +167,40 @@ public class FrmOProduccion extends javax.swing.JFrame {
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel20.setText("SEBITEX COMPANY S.A.C");
         getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
-        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 20, -1, -1));
+        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 50, -1, -1));
 
         jLabel7.setText("Teléfono:");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, 80, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 150, 80, -1));
 
         jLabel19.setText("Codigo Cliente:");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 90, -1));
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 90, -1));
 
         jLabel21.setText("R.U.C:");
-        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 80, -1));
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 40, -1));
 
         jLabel22.setText("Dirección:");
-        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 120, 80, -1));
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 80, -1));
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, 140, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 140, 140, -1));
 
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, 220, -1));
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 120, 220, -1));
         getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 140, -1));
         getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 140, -1));
         getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 140, -1));
 
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, -1, -1));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setText("Orden de Producción");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -293,4 +301,33 @@ FrmProduccion fproduccion = new FrmProduccion();
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
+
+   @Override
+    public void run() {
+      Thread th = Thread.currentThread();
+      while(th == h1){
+          calcula();
+          jLabel8.setText(hora+":"+minutos+":"+segundos+" "+ampm);
+      try{
+          Thread.sleep(1000);
+      }catch(Exception e){
+      }
+      }
+    }
+    private void calcula(){
+    Calendar cdrio = new GregorianCalendar();
+    Date fechaHoraActual = new Date();
+    cdrio.setTime(fechaHoraActual);
+    ampm = cdrio.get(Calendar.AM_PM)==Calendar.AM?"AM":"PM";
+    int hd = Calendar.HOUR_OF_DAY, mm = Calendar.MINUTE,ss=Calendar.SECOND;
+    if (ampm.equals("PM")){
+    int h = cdrio.get(hd)-12;
+    hora = h>9?""+h:"0"+h;
+    }else
+    {
+    hora=cdrio.get(hd)>9?""+cdrio.get(hd):"0"+cdrio.get(hd);
+    }
+    minutos = cdrio.get(mm)>9?""+cdrio.get(mm):"0"+cdrio.get(mm);
+    segundos = cdrio.get(ss)>9?""+cdrio.get(ss):"0"+cdrio.get(ss);
+    }
 }
