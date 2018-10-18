@@ -103,6 +103,7 @@ implements Runnable{
         jTextArea6 = new javax.swing.JTextArea();
         jLabel6 = new javax.swing.JLabel();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("FACTURACION");
@@ -176,16 +177,16 @@ implements Runnable{
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 410, -1, -1));
 
         jLabel10.setText("jLabel10");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 410, -1, -1));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 410, -1, 10));
 
         jLabel11.setText("Total Dscto:");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 440, -1, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 430, -1, -1));
 
         jLabel12.setText("IGV:");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 460, -1, -1));
 
         jLabel13.setText("jLabel13");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 440, -1, -1));
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 430, -1, -1));
 
         jLabel14.setText("jLabel14");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, -1, -1));
@@ -200,7 +201,7 @@ implements Runnable{
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 490, -1, -1));
 
         jLabel17.setText("jLabel17");
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 480, -1, -1));
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 490, -1, -1));
 
         jLabel18.setText("Observaciones: ");
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 560, -1, -1));
@@ -252,7 +253,7 @@ implements Runnable{
         getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 150, 120, 30));
 
         jLabel19.setText("Tipo");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, -1, -1));
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, -1, -1));
 
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Factura", "Boleta", " " }));
         jComboBox5.addItemListener(new java.awt.event.ItemListener() {
@@ -262,9 +263,9 @@ implements Runnable{
         });
         getContentPane().add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, -1, -1));
 
-        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel20.setText("SEBITEX COMPANY S.A.C");
-        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, -1, -1));
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         jTextArea4.setColumns(20);
         jTextArea4.setRows(5);
@@ -281,6 +282,10 @@ implements Runnable{
         jLabel6.setText("Hora:");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 90, -1, -1));
         getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 60, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel7.setText("FACTURA DE VENTA");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -382,6 +387,7 @@ FrmVentas fventas = new FrmVentas();
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
