@@ -5,6 +5,13 @@
  */
 package VIEW;
 
+import VIEW.Reporte.FrmReportes;
+import VIEW.Ventas.FrmVentas;
+import VIEW.Consultas.FrmConsultas;
+import VIEW.Compras.FrmCompras;
+import VIEW.Produccion.FrmProduccion;
+import VIEW.Almacen.FrmAlmacen;
+
 /**
  *
  * @author Administrador
@@ -165,7 +172,7 @@ public class FrmMenuPrincipal extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(27, 27, 27)
                                 .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(224, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
