@@ -118,10 +118,10 @@ public class RepProducto extends javax.swing.JFrame {
                 jButton10ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 410, 80, 60));
+        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 450, 70, 50));
 
-        jButton1.setText("Imprimir");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 430, -1, -1));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/imprimir.jpg"))); // NOI18N
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 450, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

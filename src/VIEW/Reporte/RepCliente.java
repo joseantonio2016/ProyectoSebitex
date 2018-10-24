@@ -74,7 +74,7 @@ public class RepCliente extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 370, 80, 60));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 390, 80, 60));
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel20.setText("SEBITEX COMPANY S.A.C");
@@ -98,21 +98,20 @@ public class RepCliente extends javax.swing.JFrame {
         jTextField6.setText(" ");
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 490, 30));
 
-        jButton1.setText("Imprimir");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 390, -1, -1));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/imprimir.jpg"))); // NOI18N
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 390, 80, 60));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-FrmReportes freportes = new FrmReportes();
+        FrmReportes freportes = new FrmReportes();
         freportes.setLocationRelativeTo(freportes);
         freportes.setVisible(true);
         this.setVisible(false);
-        dispose();      
-        
-// TODO add your handling code here:
+        dispose();
 
+        // TODO add your handling code here:
 
     }//GEN-LAST:event_jButton7ActionPerformed
 

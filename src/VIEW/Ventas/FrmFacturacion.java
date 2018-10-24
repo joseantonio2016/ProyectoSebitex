@@ -168,26 +168,26 @@ implements Runnable{
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 200, 90, -1));
         getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 200, 80, -1));
 
-        jButton1.setText("Adicionar");
+        jButton1.setText("Añadir");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 280, 80, -1));
 
         jButton2.setText("Editar");
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 80, -1));
 
-        jLabel9.setText("Sub total: ");
+        jLabel9.setText("Sub Total: ");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 420, -1, -1));
 
         jLabel11.setText("Total Dscto:");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 440, -1, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 450, -1, -1));
 
         jLabel12.setText("IGV:");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 470, -1, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 480, -1, -1));
 
         jLabel15.setText("Estado");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 460, -1, -1));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 450, -1, -1));
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 460, -1, -1));
+        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 450, -1, -1));
 
         jLabel16.setText("Monto total:");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 510, -1, -1));

@@ -122,11 +122,11 @@ public class FrmOrdenCompra extends javax.swing.JFrame {
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, 90, -1));
         getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 80, -1));
 
-        jButton1.setText("Adicionar");
+        jButton1.setText("Añadir");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 270, 80, -1));
 
         jButton2.setText("Eliminar");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 340, 80, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 330, 80, -1));
 
         jLabel16.setText("Monto total:");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 410, -1, -1));
@@ -136,25 +136,25 @@ public class FrmOrdenCompra extends javax.swing.JFrame {
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 420, -1, -1));
         getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 220, -1));
 
-        jButton3.setText("NUEVO");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, -1, -1));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/nuevo.jpg"))); // NOI18N
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 460, 60, 60));
 
-        jButton4.setText("GRABAR");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 470, -1, -1));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/guardar.jpg"))); // NOI18N
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, 60, 60));
 
-        jButton5.setText("EDITAR");
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 470, -1, -1));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/editar.jpg"))); // NOI18N
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 460, 60, 60));
 
-        jButton6.setText("CANCELAR");
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 470, -1, -1));
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/cancelar.jpg"))); // NOI18N
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 460, 60, -1));
 
-        jButton7.setText("RETORNAR");
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/retornar.jpg"))); // NOI18N
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 470, -1, -1));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 460, 60, 60));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);

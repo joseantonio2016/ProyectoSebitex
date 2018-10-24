@@ -61,7 +61,6 @@ public class FrmPedido extends javax.swing.JFrame implements Runnable {
         jLabel15 = new javax.swing.JLabel();
         jComboBox4 = new javax.swing.JComboBox<>();
         jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jTextField11 = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
@@ -84,6 +83,7 @@ public class FrmPedido extends javax.swing.JFrame implements Runnable {
         jTextArea5 = new javax.swing.JTextArea();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jLabel7 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Pedidos");
@@ -151,11 +151,11 @@ public class FrmPedido extends javax.swing.JFrame implements Runnable {
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 200, 90, -1));
         getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 200, 80, -1));
 
-        jButton1.setText("Adicionar");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 270, 80, -1));
+        jButton1.setText("Añadir");
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 280, 80, -1));
 
         jButton2.setText("Editar");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 310, 80, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 320, 80, -1));
 
         jLabel15.setText("Estado");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 490, -1, -1));
@@ -163,11 +163,8 @@ public class FrmPedido extends javax.swing.JFrame implements Runnable {
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 480, -1, -1));
 
-        jLabel16.setText("Monto total:");
+        jLabel16.setText("Monto Total:");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 410, -1, -1));
-
-        jLabel17.setText("jLabel17");
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 410, -1, -1));
 
         jLabel18.setText("Observaciones: ");
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 530, -1, -1));
@@ -177,32 +174,32 @@ public class FrmPedido extends javax.swing.JFrame implements Runnable {
                 jTextField11ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 530, 220, -1));
+        getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 530, 390, 30));
 
-        jButton3.setText("NUEVO");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 580, -1, -1));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/nuevo.jpg"))); // NOI18N
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 590, 60, 60));
 
-        jButton4.setText("GRABAR");
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/guardar.jpg"))); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 580, -1, -1));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 590, 70, 60));
 
-        jButton5.setText("EDITAR");
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 580, -1, -1));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/editar.jpg"))); // NOI18N
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 590, 70, -1));
 
-        jButton6.setText("CANCELAR");
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 580, -1, -1));
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/cancelar.jpg"))); // NOI18N
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 590, 70, -1));
 
-        jButton7.setText("RETORNAR");
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/retornar.jpg"))); // NOI18N
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 580, -1, -1));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 590, 70, 60));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -248,6 +245,7 @@ public class FrmPedido extends javax.swing.JFrame implements Runnable {
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel7.setText("PEDIDO DE VENTA");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, -1, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 410, 60, 20));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -330,7 +328,6 @@ FrmVentas fventas = new FrmVentas();
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
@@ -356,6 +353,7 @@ FrmVentas fventas = new FrmVentas();
     private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
