@@ -97,13 +97,13 @@ public class FrmOrdenCompra extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Código", "Cantidad", "Precio", "Importe"
+                "Código", "Descripción", "Cantidad", "Precio", "Importe"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -130,8 +130,6 @@ public class FrmOrdenCompra extends javax.swing.JFrame {
 
         jLabel18.setText("Observaciones: ");
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, -1, -1));
-
-        jTextField11.setText("jTextField11");
         getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 470, 220, -1));
 
         jButton3.setText("NUEVO");
@@ -193,11 +191,10 @@ public class FrmOrdenCompra extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-      
-        
-// TODO add your handling code here:
 
-FrmCompras fcompras = new FrmCompras();
+        // TODO add your handling code here:
+
+        FrmCompras fcompras = new FrmCompras();
         fcompras.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton7ActionPerformed

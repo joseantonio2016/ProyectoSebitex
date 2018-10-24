@@ -71,25 +71,25 @@ public class RepCliente extends javax.swing.JFrame {
         jLabel5.setText("Desde: ");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, -1, -1));
 
-        jButton3.setText("NUEVO");
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/nuevo.jpg"))); // NOI18N
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, -1, -1));
 
-        jButton4.setText("GRABAR");
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/guardar.jpg"))); // NOI18N
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 420, -1, -1));
 
-        jButton5.setText("EDITAR");
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 420, -1, -1));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/editar.jpg"))); // NOI18N
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 420, -1, -1));
 
-        jButton6.setText("CANCELAR");
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 420, -1, -1));
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/cancelar.jpg"))); // NOI18N
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 420, -1, -1));
 
-        jButton7.setText("RETORNAR");
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/retornar.jpg"))); // NOI18N
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 420, -1, -1));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 420, 80, 60));
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel20.setText("SEBITEX COMPANY S.A.C");
