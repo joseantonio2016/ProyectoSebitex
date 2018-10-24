@@ -161,7 +161,7 @@ public class FrmLogin extends javax.swing.JFrame implements ActionListener{
         jPanel9.setOpaque(false);
         jPanel9.setLayout(new java.awt.BorderLayout());
 
-        jButton4.setText("||>");
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/notificacion.jpg"))); // NOI18N
         jButton4.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jButton4StateChanged(evt);

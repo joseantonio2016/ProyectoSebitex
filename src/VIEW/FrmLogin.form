@@ -305,7 +305,9 @@
                           <SubComponents>
                             <Component class="javax.swing.JButton" name="jButton4">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="||&gt;"/>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/VIEW/Images/notificacion.jpg"/>
+                                </Property>
                               </Properties>
                               <Events>
                                 <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jButton4StateChanged"/>
