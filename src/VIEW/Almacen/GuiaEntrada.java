@@ -69,7 +69,7 @@ public class GuiaEntrada extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Código Producto", "Codigo Proveedor", "N° Factura", "Cantidad Prod."
+                "      Código Producto", "     Codigo Proveedor", "          N° Factura", "    Cantidad Prod."
             }
         ));
         jScrollPane1.setViewportView(jTable1);

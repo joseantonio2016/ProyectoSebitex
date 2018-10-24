@@ -92,7 +92,7 @@ public class FrmOProduccion extends javax.swing.JFrame implements Runnable{
                 {null, null, null, null}
             },
             new String [] {
-                "Cod Prod", "Modelo", "Descripción", "Cant. Prod"
+                "             Cod. Prod.", "               Modelo", "              Descripción", "              Cant. Prod"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -127,7 +127,7 @@ public class FrmOProduccion extends javax.swing.JFrame implements Runnable{
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 450, -1, -1));
 
         jTextField11.setText(" ");
-        getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 380, 20));
+        getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 380, 30));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/nuevo.jpg"))); // NOI18N
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 500, 70, -1));
@@ -172,7 +172,7 @@ public class FrmOProduccion extends javax.swing.JFrame implements Runnable{
 
         jButton8.setText("Editar");
         getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 290, 80, -1));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 100, -1));
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 400, 100, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -70,7 +70,7 @@ public class RepVendedor extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Código", "Nombre", "DNI", "Sexo", "Dirección", "Fecha de Ingreso"
+                "        Código", "       Nombre", "            DNI", "          Sexo", "       Dirección", "Fecha de Ingreso"
             }
         ));
         jScrollPane1.setViewportView(jTable1);

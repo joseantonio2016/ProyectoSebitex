@@ -109,7 +109,7 @@ public class FrmOrdenCompra extends javax.swing.JFrame {
                 {null, null, null, null, null}
             },
             new String [] {
-                "Cod Prod", "Descr Prod", "Cant Prod", " Precio Prod", "Importe"
+                "        Cod. Prod", "        Desc. Prod", "        Cant. Prod", "        Precio Prod.", "           Importe"
             }
         ));
         jScrollPane1.setViewportView(jTable1);

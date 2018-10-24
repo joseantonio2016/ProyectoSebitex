@@ -131,7 +131,7 @@ public class FrmPedido extends javax.swing.JFrame implements Runnable {
                 {null, null, null, null}
             },
             new String [] {
-                "Código", "Cantidad", "Precio", "Importe"
+                "            Código", "             Cantidad", "           Precio", "              Importe"
             }
         ));
         jScrollPane1.setViewportView(jTable1);

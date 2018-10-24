@@ -58,7 +58,7 @@ public class RepCliente extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Código", "Razón Social", "RUC", "Dirección", "Teléfono", "Fecha "
+                "          Código", "      Razón Social", "           RUC", "        Dirección", "         Teléfono", "         Fecha "
             }
         ));
         jScrollPane1.setViewportView(jTable1);

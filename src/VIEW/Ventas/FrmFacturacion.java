@@ -151,7 +151,7 @@ implements Runnable{
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Cod. Producto", "Nro. Pedido", "Descripción", "Cantidad", "Precio", "Importe"
+                "     Cod. Producto", "        N° Pedido", "        Descripción", "         Cantidad", "             Precio", "          Importe"
             }
         ));
         jScrollPane1.setViewportView(jTable1);

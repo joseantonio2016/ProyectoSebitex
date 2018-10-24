@@ -143,7 +143,7 @@ public class FrmBoleta extends javax.swing.JFrame implements Runnable {
                 {null, null, null, null}
             },
             new String [] {
-                "Cod", "Cant", "Precio", "Importe"
+                "         Código", "         Cantidad", "          Precio", "         Importe"
             }
         ));
         jScrollPane1.setViewportView(jTable1);

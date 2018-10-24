@@ -65,7 +65,7 @@ public class FrmInsumos extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "            Title 1", "            Title 2", "            Title 3", "            Title 4"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -84,7 +84,7 @@ public class FrmInsumos extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("SEBITEX COMPANY S.A.C");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

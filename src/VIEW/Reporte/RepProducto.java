@@ -74,7 +74,7 @@ public class RepProducto extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Cod Prod", "Categoría", "Modelo", "Unidades", "Precio", "Fecha de Registro"
+                "      Cod. Prod.", "        Categoría", "          Modelo", "        Unidades", "          Precio", "Fecha de Registro"
             }
         ));
         jTable1.setPreferredSize(new java.awt.Dimension(800, 470));

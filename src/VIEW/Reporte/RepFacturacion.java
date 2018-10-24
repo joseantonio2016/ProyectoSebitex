@@ -71,7 +71,7 @@ public class RepFacturacion extends javax.swing.JFrame {
                 {null, null, null, null, null}
             },
             new String [] {
-                "N° Factura", "Cod Cliente", "Fecha emisión", "Fecha Pago", "Importe total"
+                "           N° Factura", "        Cod. Cliente", "       Fecha emisión", "         Fecha Pago", "      Importe Total"
             }
         ));
         jTable1.setPreferredSize(new java.awt.Dimension(800, 480));
