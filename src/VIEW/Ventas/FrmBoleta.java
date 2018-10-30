@@ -208,7 +208,7 @@ public class FrmBoleta extends javax.swing.JFrame implements Runnable {
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/editar.jpg"))); // NOI18N
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 520, 70, -1));
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/cancelar.jpg"))); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/anular.jpg"))); // NOI18N
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 520, 70, -1));
 
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/retornar.jpg"))); // NOI18N

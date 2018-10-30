@@ -220,6 +220,7 @@ public class FrmOrdenCompra extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         FrmCompras fcompras = new FrmCompras();
+        fcompras.setLocationRelativeTo(fcompras);
         fcompras.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton7ActionPerformed

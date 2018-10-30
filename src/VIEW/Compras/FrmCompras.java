@@ -91,6 +91,11 @@ public class FrmCompras extends javax.swing.JFrame {
         jMenu11.setText("Mantenimientos");
 
         jMenu1.setText("Insumos");
+        jMenu1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu1ActionPerformed(evt);
+            }
+        });
 
         jMenuItem7.setText("Rollos");
         jMenu1.add(jMenuItem7);
@@ -195,6 +200,7 @@ public class FrmCompras extends javax.swing.JFrame {
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
         FrmMantenimientoProveedor fmprov = new FrmMantenimientoProveedor();
+          fmprov.setLocationRelativeTo(fmprov);
         fmprov.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem6ActionPerformed
@@ -207,6 +213,7 @@ public class FrmCompras extends javax.swing.JFrame {
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
         FrmOrdenCompra fmprov = new FrmOrdenCompra();
+        fmprov.setLocationRelativeTo(fmprov);
         fmprov.setVisible(true);
         dispose();
         
@@ -220,6 +227,13 @@ public class FrmCompras extends javax.swing.JFrame {
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_jMenuItem15ActionPerformed
+
+    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
+FrmInsumos finsumos = new FrmInsumos();
+        finsumos.setLocationRelativeTo(finsumos);
+        finsumos.setVisible(true);
+        dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu1ActionPerformed
 
         
              

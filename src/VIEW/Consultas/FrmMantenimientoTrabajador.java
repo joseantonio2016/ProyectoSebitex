@@ -99,7 +99,7 @@ public class FrmMantenimientoTrabajador extends javax.swing.JFrame {
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/ico_trabajador.jpg"))); // NOI18N
         jLabel9.setToolTipText("");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, 160, 150));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 260, 210, 130));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/nuevo.jpg"))); // NOI18N
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, 70, -1));
