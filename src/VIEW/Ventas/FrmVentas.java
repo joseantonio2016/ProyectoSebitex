@@ -190,6 +190,7 @@ public class FrmVentas extends javax.swing.JFrame {
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
         FrmFacturacion fact = FrmFacturacion.getFrmFacturacion();
+        fact.setLocationRelativeTo(fact);
         fact.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem4ActionPerformed

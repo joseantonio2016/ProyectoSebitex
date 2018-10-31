@@ -34,10 +34,6 @@ public class RepCliente extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jLabel20 = new javax.swing.JLabel();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
@@ -47,6 +43,7 @@ public class RepCliente extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Reporte CLiente");
@@ -61,7 +58,7 @@ public class RepCliente extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Código", "Razón Social", "RUC", "Dirección", "Teléfono", "Fecha "
+                "          Código", "      Razón Social", "           RUC", "        Dirección", "         Teléfono", "         Fecha "
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -71,25 +68,13 @@ public class RepCliente extends javax.swing.JFrame {
         jLabel5.setText("Desde: ");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, -1, -1));
 
-        jButton3.setText("NUEVO");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, -1, -1));
-
-        jButton4.setText("GRABAR");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 420, -1, -1));
-
-        jButton5.setText("EDITAR");
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 420, -1, -1));
-
-        jButton6.setText("CANCELAR");
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 420, -1, -1));
-
-        jButton7.setText("RETORNAR");
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/retornar.jpg"))); // NOI18N
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 420, -1, -1));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 390, 80, 60));
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel20.setText("SEBITEX COMPANY S.A.C");
@@ -113,18 +98,20 @@ public class RepCliente extends javax.swing.JFrame {
         jTextField6.setText(" ");
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 490, 30));
 
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/imprimir.jpg"))); // NOI18N
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 390, 80, 60));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-FrmReportes freportes = new FrmReportes();
+        FrmReportes freportes = new FrmReportes();
         freportes.setLocationRelativeTo(freportes);
         freportes.setVisible(true);
         this.setVisible(false);
-        dispose();      
-        
-// TODO add your handling code here:
+        dispose();
 
+        // TODO add your handling code here:
 
     }//GEN-LAST:event_jButton7ActionPerformed
 
@@ -179,10 +166,7 @@ FrmReportes freportes = new FrmReportes();
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private com.toedter.calendar.JDateChooser jDateChooser1;

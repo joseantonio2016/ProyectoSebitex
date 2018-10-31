@@ -5,6 +5,7 @@
  */
 package VIEW.Compras;
 
+import VIEW.Almacen.GuiaEntrada;
 import VIEW.Compras.FrmOrdenCompra;
 import VIEW.FrmConfiguracion;
 import VIEW.Consultas.FrmMantenimientoProveedor;
@@ -43,11 +44,8 @@ public class FrmCompras extends javax.swing.JFrame {
         jMenu10 = new javax.swing.JMenu();
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenu11 = new javax.swing.JMenu();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem11 = new javax.swing.JMenuItem();
         jMenu22 = new javax.swing.JMenu();
         jMenuItem15 = new javax.swing.JMenuItem();
         jMenu36 = new javax.swing.JMenu();
@@ -77,6 +75,11 @@ public class FrmCompras extends javax.swing.JFrame {
         jMenu9.setText("Facturación");
 
         jMenuItem5.setText("Nuevo");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         jMenu9.add(jMenuItem5);
 
         jMenuBar1.add(jMenu9);
@@ -84,37 +87,37 @@ public class FrmCompras extends javax.swing.JFrame {
         jMenu10.setText("Guia de entrada");
 
         jMenuItem10.setText("Nuevo");
+        jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem10ActionPerformed(evt);
+            }
+        });
         jMenu10.add(jMenuItem10);
 
         jMenuBar1.add(jMenu10);
 
         jMenu11.setText("Mantenimientos");
-
-        jMenu1.setText("Insumos");
-
-        jMenuItem7.setText("Rollos");
-        jMenu1.add(jMenuItem7);
-
-        jMenuItem8.setText("Directos");
-        jMenu1.add(jMenuItem8);
-
-        jMenuItem9.setText("Indirectos");
-        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
+        jMenu11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem9ActionPerformed(evt);
+                jMenu11ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem9);
 
-        jMenu11.add(jMenu1);
-
-        jMenuItem6.setText("Proveedor");
+        jMenuItem6.setText("Insumos");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem6ActionPerformed(evt);
             }
         });
         jMenu11.add(jMenuItem6);
+
+        jMenuItem11.setText("Proveedor");
+        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem11ActionPerformed(evt);
+            }
+        });
+        jMenu11.add(jMenuItem11);
 
         jMenuBar1.add(jMenu11);
 
@@ -194,19 +197,17 @@ public class FrmCompras extends javax.swing.JFrame {
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
-        FrmMantenimientoProveedor fmprov = new FrmMantenimientoProveedor();
-        fmprov.setVisible(true);
+        
+        FrmInsumos fminsumos = new FrmInsumos();
+        fminsumos.setLocationRelativeTo(fminsumos);
+        fminsumos.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem6ActionPerformed
-
-    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_jMenuItem9ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
         FrmOrdenCompra fmprov = new FrmOrdenCompra();
+        fmprov.setLocationRelativeTo(fmprov);
         fmprov.setVisible(true);
         dispose();
         
@@ -220,6 +221,32 @@ public class FrmCompras extends javax.swing.JFrame {
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_jMenuItem15ActionPerformed
+
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+     FrmMantenimientoProveedor fmprov = new FrmMantenimientoProveedor();
+          fmprov.setLocationRelativeTo(fmprov);
+        fmprov.setVisible(true);
+        dispose();   // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
+
+    private void jMenu11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu11ActionPerformed
+       // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu11ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        FrmFactCompras fmfcompras = new FrmFactCompras();
+          fmfcompras.setLocationRelativeTo(fmfcompras);
+        fmfcompras.setVisible(true);
+        dispose(); // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
+GuiaEntrada gentrada = new GuiaEntrada(this);
+        gentrada.setLocationRelativeTo(gentrada);
+        gentrada.setVisible(true);
+        this.setVisible(false);
+        dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem10ActionPerformed
 
         
              
@@ -263,7 +290,6 @@ public class FrmCompras extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu2;
@@ -273,14 +299,12 @@ public class FrmCompras extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
+    private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem15;
     private javax.swing.JMenuItem jMenuItem17;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
     // End of variables declaration//GEN-END:variables
 }
