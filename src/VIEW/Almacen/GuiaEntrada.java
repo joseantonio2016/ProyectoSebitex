@@ -5,21 +5,29 @@
  */
 package VIEW.Almacen;
 
-import VIEW.Almacen.FrmAlmacen;
+import javax.swing.JFrame;
 
 /**
  *
  * @author Administrador
  */
-public class GuiaEntrada extends javax.swing.JFrame {
+public class GuiaEntrada extends JFrame {
 
    
 
     /**
      * Creates new form FrmFacturacion
+     * @param callForm
      */
-    public GuiaEntrada() {
+    
+    private JFrame miCallForm;
+    public GuiaEntrada(JFrame callForm) {
         initComponents();
+        this.miCallForm = callForm;
+    }
+
+    private GuiaEntrada() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
@@ -149,11 +157,9 @@ public class GuiaEntrada extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-FrmAlmacen falmacen = new FrmAlmacen();
-        falmacen.setLocationRelativeTo(falmacen);
-        falmacen.setVisible(true);
-        this.setVisible(false);
-        dispose();      
+
+        miCallForm.setVisible(true);
+        dispose();   
         
 // TODO add your handling code here:
 
