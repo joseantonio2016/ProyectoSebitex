@@ -48,9 +48,9 @@ public class RepVendedor extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Reporte Vendedor");
-        setMaximumSize(new java.awt.Dimension(820, 650));
-        setMinimumSize(new java.awt.Dimension(820, 650));
-        setPreferredSize(new java.awt.Dimension(820, 650));
+        setMaximumSize(new java.awt.Dimension(750, 535));
+        setMinimumSize(new java.awt.Dimension(750, 535));
+        setPreferredSize(new java.awt.Dimension(750, 535));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton7.setText("RETORNAR");
