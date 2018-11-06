@@ -1,13 +1,13 @@
 
 package VIEW.Ventas;
 
+import VIEW.Almacen.GuiaSalida;
 import VIEW.FrmConfiguracion;
 import VIEW.Consultas.FrmMantenimientoCliente;
 import VIEW.Consultas.FrmMantenimientoProducto;
 import VIEW.Consultas.FrmMantenimientoTrabajador;
 import VIEW.FrmMenuPrincipal;
 import VIEW.Ventas.FrmFacturacion;
-import VIEW.Ventas.FrmGuiaSalidaVenta;
 import VIEW.Ventas.FrmPedido;
 
 public class FrmVentas extends javax.swing.JFrame {
@@ -221,9 +221,10 @@ public class FrmVentas extends javax.swing.JFrame {
 
     private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
         // TODO add your handling code here:
-        FrmGuiaSalidaVenta fmc = new FrmGuiaSalidaVenta();
-        fmc.setLocationRelativeTo(fmc);
-        fmc.setVisible(true);
+        GuiaSalida gsalida = new GuiaSalida(this);
+        gsalida.setLocationRelativeTo(null);
+        gsalida.setVisible(true);
+        this.setVisible(false);
         dispose();
     }//GEN-LAST:event_jMenuItem10ActionPerformed
 

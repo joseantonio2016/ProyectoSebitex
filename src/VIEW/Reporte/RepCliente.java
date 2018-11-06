@@ -47,6 +47,10 @@ public class RepCliente extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Reporte CLiente");
+        setFocusTraversalPolicyProvider(true);
+        setMaximumSize(new java.awt.Dimension(820, 650));
+        setMinimumSize(new java.awt.Dimension(820, 650));
+        setPreferredSize(new java.awt.Dimension(820, 650));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(

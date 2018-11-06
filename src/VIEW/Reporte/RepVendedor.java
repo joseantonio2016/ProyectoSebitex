@@ -35,11 +35,6 @@ public class RepVendedor extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
         jLabel20 = new javax.swing.JLabel();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jLabel11 = new javax.swing.JLabel();
@@ -48,9 +43,14 @@ public class RepVendedor extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
+        jButton10 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Reporte Vendedor");
+        setMaximumSize(new java.awt.Dimension(820, 650));
+        setMinimumSize(new java.awt.Dimension(820, 650));
+        setPreferredSize(new java.awt.Dimension(820, 650));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton7.setText("RETORNAR");
@@ -80,26 +80,6 @@ public class RepVendedor extends javax.swing.JFrame {
         jLabel5.setText("Desde: ");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, -1, -1));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/nuevo.jpg"))); // NOI18N
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 430, 70, 60));
-
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/guardar.jpg"))); // NOI18N
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 430, 80, -1));
-
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/editar.jpg"))); // NOI18N
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 430, 70, -1));
-
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/cancelar.jpg"))); // NOI18N
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 430, 60, -1));
-
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/retornar.jpg"))); // NOI18N
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 430, 70, 60));
-
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel20.setText("SEBITEX COMPANY S.A.C");
         getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
@@ -122,6 +102,17 @@ public class RepVendedor extends javax.swing.JFrame {
         jTextField6.setText(" ");
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, 490, 30));
 
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/retornar.jpg"))); // NOI18N
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 440, 70, 50));
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/imprimir.jpg"))); // NOI18N
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 440, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -137,7 +128,7 @@ FrmReportes freportes = new FrmReportes();
 
     }//GEN-LAST:event_jButton7ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         FrmReportes freportes = new FrmReportes();
         freportes.setLocationRelativeTo(freportes);
         freportes.setVisible(true);
@@ -145,7 +136,7 @@ FrmReportes freportes = new FrmReportes();
         dispose();
 
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_jButton10ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -310,12 +301,9 @@ FrmReportes freportes = new FrmReportes();
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private com.toedter.calendar.JDateChooser jDateChooser2;

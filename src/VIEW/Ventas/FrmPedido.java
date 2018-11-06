@@ -264,7 +264,9 @@ public class FrmPedido extends javax.swing.JFrame implements Runnable {
 // TODO add your handling code here:
 
 FrmVentas fventas = new FrmVentas();
+fventas.setLocationRelativeTo(fventas);
         fventas.setVisible(true);
+        this.setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 

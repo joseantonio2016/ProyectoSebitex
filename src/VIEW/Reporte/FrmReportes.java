@@ -158,14 +158,17 @@ public class FrmReportes extends javax.swing.JFrame {
     private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
         // TODO add your handling code here:
         RepCliente rcliente = new RepCliente();
+        rcliente.setLocationRelativeTo(rcliente);
         rcliente.setVisible(true);
         this.setVisible(false);
         dispose();
+        
     }//GEN-LAST:event_jMenuItem10ActionPerformed
 
     private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
         // TODO add your handling code here:
         RepFacturacion rfacturacion = new RepFacturacion();
+        rfacturacion.setLocationRelativeTo(rfacturacion);
         rfacturacion.setVisible(true);
         this.setVisible(false);
         dispose();
@@ -179,6 +182,7 @@ public class FrmReportes extends javax.swing.JFrame {
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
         // TODO add your handling code here:
         RepVendedor rvendedor = new RepVendedor();
+        rvendedor.setLocationRelativeTo(rvendedor);
         rvendedor.setVisible(true);
         this.setVisible(false);
         dispose();
@@ -187,6 +191,7 @@ public class FrmReportes extends javax.swing.JFrame {
     private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
         // TODO add your handling code here:
         RepProducto rproducto = new RepProducto();
+        rproducto.setLocationRelativeTo(rproducto);
         rproducto.setVisible(true);
         this.setVisible(false);
         dispose();
