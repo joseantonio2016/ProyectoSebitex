@@ -183,6 +183,7 @@ public class FrmOProduccion extends javax.swing.JFrame implements Runnable{
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
 FrmProduccion fproduccion = new FrmProduccion();
+fproduccion.setLocationRelativeTo(fproduccion);
         fproduccion.setVisible(true);
         dispose();      
         

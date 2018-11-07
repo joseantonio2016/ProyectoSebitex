@@ -157,6 +157,7 @@ public class FrmMantenimientoTrabajador extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         FrmVentas fventas = new FrmVentas();
+        fventas.setLocationRelativeTo(fventas);
         fventas.setVisible(true);
         this.setVisible(false);
         dispose();

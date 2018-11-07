@@ -104,7 +104,7 @@ public class FrmVentas extends javax.swing.JFrame {
         });
         jMenu11.add(jMenuItem6);
 
-        jMenuItem8.setText("Vendedor");
+        jMenuItem8.setText("Trabajador");
         jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem8ActionPerformed(evt);
@@ -222,7 +222,7 @@ public class FrmVentas extends javax.swing.JFrame {
     private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
         // TODO add your handling code here:
         GuiaSalida gsalida = new GuiaSalida(this);
-        gsalida.setLocationRelativeTo(null);
+        gsalida.setLocationRelativeTo(gsalida);
         gsalida.setVisible(true);
         this.setVisible(false);
         dispose();

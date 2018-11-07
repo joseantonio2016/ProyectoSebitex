@@ -53,6 +53,7 @@ public class FrmFactCompras extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("REGISTRO DE FACTURA");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("Nro. factura:");
@@ -134,8 +135,9 @@ public class FrmFactCompras extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-FrmCompras fcompras = new FrmCompras();//aqui no es ventas jaja
-        fcompras.setVisible(true);//genial no cambia nada pero es buena practica informatica te atreves a burlarte en mi casa?malo
+FrmCompras fcompras = new FrmCompras();
+fcompras.setLocationRelativeTo(fcompras);
+        fcompras.setVisible(true);//IDIOTA!!!!!!
         dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 

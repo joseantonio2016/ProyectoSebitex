@@ -220,6 +220,11 @@ public class FrmBoleta extends javax.swing.JFrame implements Runnable {
                 jComboBox5ItemStateChanged(evt);
             }
         });
+        jComboBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 90, -1));
 
         jTextArea4.setColumns(20);
@@ -301,6 +306,10 @@ fventas.setLocationRelativeTo(fventas);
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jComboBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox5ActionPerformed
 
     /**
      * @param args the command line arguments

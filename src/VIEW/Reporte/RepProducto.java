@@ -52,9 +52,10 @@ public class RepProducto extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Reporte de Producto");
-        setMaximumSize(new java.awt.Dimension(820, 650));
-        setMinimumSize(new java.awt.Dimension(820, 650));
-        setPreferredSize(new java.awt.Dimension(820, 650));
+        setMaximumSize(new java.awt.Dimension(690, 535));
+        setMinimumSize(new java.awt.Dimension(690, 535));
+        setPreferredSize(new java.awt.Dimension(690, 535));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton7.setText("RETORNAR");

@@ -48,10 +48,16 @@ public class FrmProduccion extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Produccion");
+        setMaximumSize(new java.awt.Dimension(630, 400));
+        setMinimumSize(new java.awt.Dimension(630, 400));
+        setPreferredSize(new java.awt.Dimension(630, 400));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/Logo.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 21, 467, 296));
+        jLabel1.setMaximumSize(new java.awt.Dimension(437, 233));
+        jLabel1.setMinimumSize(new java.awt.Dimension(437, 233));
+        jLabel1.setPreferredSize(new java.awt.Dimension(437, 233));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 460, 260));
 
         jMenu9.setText("Orden de Producción");
 

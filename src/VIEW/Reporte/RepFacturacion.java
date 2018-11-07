@@ -48,9 +48,9 @@ public class RepFacturacion extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Reporte de Facturación");
-        setMaximumSize(new java.awt.Dimension(820, 650));
-        setMinimumSize(new java.awt.Dimension(820, 650));
-        setPreferredSize(new java.awt.Dimension(820, 650));
+        setMaximumSize(new java.awt.Dimension(720, 520));
+        setMinimumSize(new java.awt.Dimension(720, 520));
+        setPreferredSize(new java.awt.Dimension(720, 520));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton7.setText("RETORNAR");

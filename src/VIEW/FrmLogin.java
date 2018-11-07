@@ -91,6 +91,7 @@ public class FrmLogin extends javax.swing.JFrame implements ActionListener{
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("LOGIN");
         setUndecorated(true);
         setResizable(false);
 

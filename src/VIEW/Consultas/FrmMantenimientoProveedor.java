@@ -191,8 +191,9 @@ public class FrmMantenimientoProveedor extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        FrmCompras fcompras = new FrmCompras();//aqui no es ventas jaja
-        fcompras.setVisible(true);//genial no cambia nada pero es buena practica informatica te atreves a burlarte en mi casa?malo
+        FrmCompras fcompras = new FrmCompras();
+        fcompras.setLocationRelativeTo(fcompras);
+        fcompras.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 

@@ -42,6 +42,9 @@ public class FrmInsumos extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Mantenimiento de Insumos");
+        setMaximumSize(new java.awt.Dimension(560, 450));
+        setMinimumSize(new java.awt.Dimension(560, 450));
+        setPreferredSize(new java.awt.Dimension(560, 450));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

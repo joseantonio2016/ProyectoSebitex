@@ -225,6 +225,11 @@ implements Runnable{
                 jComboBox5ItemStateChanged(evt);
             }
         });
+        jComboBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, -1, -1));
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -269,6 +274,7 @@ fventas.setLocationRelativeTo(fventas);
         // TODO add your handling code here:
         if (jComboBox5.getSelectedItem()=="Boleta"){
         FrmBoleta fboleta = FrmBoleta.getFrmBoleta();
+        fboleta.setLocationRelativeTo(fboleta);
         fboleta.setVisible(true);
         dispose();
         }
@@ -277,6 +283,10 @@ fventas.setLocationRelativeTo(fventas);
     private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField11ActionPerformed
+
+    private void jComboBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox5ActionPerformed
 
     /**
      * @param args the command line arguments
