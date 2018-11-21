@@ -32,6 +32,7 @@ public class FrmConfiguracion extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu9 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
         jMenu22 = new javax.swing.JMenu();
         jMenuItem15 = new javax.swing.JMenuItem();
         jMenu23 = new javax.swing.JMenu();
@@ -47,6 +48,15 @@ public class FrmConfiguracion extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/Logo.jpg"))); // NOI18N
 
         jMenu9.setText("Configuración");
+
+        jMenuItem4.setText("Mantenimiento de usuario");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jMenu9.add(jMenuItem4);
+
         jMenuBar1.add(jMenu9);
 
         jMenu22.setText("Ayuda");
@@ -108,6 +118,14 @@ public class FrmConfiguracion extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+        FrmMantenimientoUsuario frmMantUsu = new FrmMantenimientoUsuario();
+        frmMantUsu.setVisible(true);
+        frmMantUsu.setLocationRelativeTo(null);
+        dispose();
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -168,5 +186,6 @@ public class FrmConfiguracion extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem15;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     // End of variables declaration//GEN-END:variables
 }
