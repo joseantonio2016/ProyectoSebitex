@@ -7,8 +7,6 @@ import VIEW.Consultas.FrmMantenimientoCliente;
 import VIEW.Consultas.FrmMantenimientoProducto;
 import VIEW.Consultas.FrmMantenimientoTrabajador;
 import VIEW.FrmMenuPrincipal;
-import VIEW.Ventas.FrmFacturacion;
-import VIEW.Ventas.FrmPedido;
 
 public class FrmVentas extends javax.swing.JFrame {
 
@@ -214,15 +212,15 @@ public class FrmVentas extends javax.swing.JFrame {
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
         FrmMantenimientoCliente fmc = new FrmMantenimientoCliente();
-        fmc.setLocationRelativeTo(fmc);
+        fmc.setLocationRelativeTo(null);
         fmc.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
         // TODO add your handling code here:
-        GuiaSalida gsalida = new GuiaSalida(this);
-        gsalida.setLocationRelativeTo(gsalida);
+        FrmGuiaSalidaVenta gsalida = new FrmGuiaSalidaVenta();
+        gsalida.setLocationRelativeTo(null);
         gsalida.setVisible(true);
         this.setVisible(false);
         dispose();
@@ -231,7 +229,7 @@ public class FrmVentas extends javax.swing.JFrame {
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
         // TODO add your handling code here:
         FrmPedido fmc = new FrmPedido();
-        fmc.setLocationRelativeTo(fmc);
+        fmc.setLocationRelativeTo(null);
         fmc.setVisible(true);
         dispose();
     }//GEN-LAST:event_jMenuItem7ActionPerformed

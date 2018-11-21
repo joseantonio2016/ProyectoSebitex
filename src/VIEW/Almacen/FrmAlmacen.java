@@ -165,7 +165,7 @@ public class FrmAlmacen extends javax.swing.JFrame {
 
     private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
         // TODO add your handling code here:
-        GuiaSalida gsalida = new GuiaSalida(this);
+        GuiaSalida gsalida = new GuiaSalida();
         gsalida.setLocationRelativeTo(null);
         gsalida.setVisible(true);
         this.setVisible(false);
