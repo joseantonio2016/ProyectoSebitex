@@ -185,6 +185,7 @@ public class FrmAlmacen extends javax.swing.JFrame {
         // TODO add your handling code here:
         Kardex kard = new Kardex();
         kard.setVisible(true);
+        kard.setLocationRelativeTo(null);
         dispose();
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 

@@ -3,9 +3,6 @@ package VIEW.Ventas;
 
 import VIEW.Almacen.GuiaSalida;
 import VIEW.FrmConfiguracion;
-import VIEW.Consultas.FrmMantenimientoCliente;
-import VIEW.Consultas.FrmMantenimientoProducto;
-import VIEW.Consultas.FrmMantenimientoTrabajador;
 import VIEW.FrmMenuPrincipal;
 
 public class FrmVentas extends javax.swing.JFrame {

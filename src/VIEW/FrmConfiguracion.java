@@ -33,8 +33,6 @@ public class FrmConfiguracion extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu9 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
-        jMenu22 = new javax.swing.JMenu();
-        jMenuItem15 = new javax.swing.JMenuItem();
         jMenu23 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
 
@@ -58,13 +56,6 @@ public class FrmConfiguracion extends javax.swing.JFrame {
         jMenu9.add(jMenuItem4);
 
         jMenuBar1.add(jMenu9);
-
-        jMenu22.setText("Ayuda");
-
-        jMenuItem15.setText("F1");
-        jMenu22.add(jMenuItem15);
-
-        jMenuBar1.add(jMenu22);
 
         jMenu23.setText("Retornar");
         jMenu23.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -178,12 +169,10 @@ public class FrmConfiguracion extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenu jMenu22;
     private javax.swing.JMenu jMenu23;
     private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem15;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;

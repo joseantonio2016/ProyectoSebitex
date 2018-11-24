@@ -8,7 +8,6 @@ package VIEW.Compras;
 import VIEW.Almacen.GuiaEntrada;
 import VIEW.Compras.FrmOrdenCompra;
 import VIEW.FrmConfiguracion;
-import VIEW.Consultas.FrmMantenimientoProveedor;
 import VIEW.FrmMenuPrincipal;
 
 /**
@@ -60,9 +59,9 @@ public class FrmCompras extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/VIEW/Images/Logo.jpg"))); // NOI18N
 
-        jMenu2.setText("Pedido");
+        jMenu2.setText("Orden de Compra");
 
-        jMenuItem4.setText("Nuevo");
+        jMenuItem4.setText("Generar Orden");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem4ActionPerformed(evt);
